@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BusForU.MasterPage.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>BusForU</title>
+    <link href="../Style/bootstrap.css" rel="stylesheet" />
+    <script src="../Script/bootstrap.js"></script>
+    <script src="../Script/jquery-2.0.3.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <div class="col-md-10 col-md-offset-1" >
+    <header>
+        <BusForU:AdminHeader ID="commonHeader" runat="server"/>
+    </header>
+    <form id="masterForm" runat="server" method="post">
+      <div>      
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          </asp:ContentPlaceHolder>
+      </div>
+    </form>
+    <footer>
+        <BusForU:CommonFooter ID="commonFooter" runat="server"/>
+    </footer>
+  </div>
+</body>
+</html>

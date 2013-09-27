@@ -1,0 +1,21 @@
+﻿body {
+   
+}
+
+
+.fontcolorandsize {
+    font-family:Arial;
+    font-size:medium;
+    font-style:inherit;
+   
+}
+
+div.minheight {
+    min-height:550px;
+}
+
+div.border {
+  border:solid;
+  color:orange;
+  border-radius:5px;
+}

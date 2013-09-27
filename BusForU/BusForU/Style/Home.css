@@ -1,0 +1,31 @@
+﻿body {
+}
+
+
+div.minheight {
+    min-height:500px;
+}
+
+.profilepic {
+    height:150px;
+    width:150px;
+}
+
+div.margin {
+    margin-top:30px;
+    
+}
+.glyphicon glyphicon-eye-open {
+    color:orange;
+}
+div.border {
+  border:solid;
+  color:orange;
+  border-radius:5px;
+}
+div.postfont {
+    font-family:Arial;
+    font-size:medium;
+    font-style:inherit;
+    color:black;
+}

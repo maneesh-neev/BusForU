@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Maneesh_Neev\Visual Studio\DLLS\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -57,18 +60,105 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BusForU.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Style\bootstrap-theme.css" />
+    <Content Include="Style\bootstrap-theme.min.css" />
+    <Content Include="Style\bootstrap.css" />
+    <Content Include="Style\bootstrap.min.css" />
+    <Content Include="Style\Home.css" />
+    <Content Include="Style\Login.css" />
+    <Content Include="Image\background.jpg" />
+    <Content Include="Image\background2.jpg" />
+    <Content Include="Image\background3.jpg" />
+    <Content Include="Script\bootstrap.js" />
+    <Content Include="Script\bootstrap.min.js" />
+    <Content Include="Script\Home.js" />
+    <Content Include="Script\jquery-2.0.3.js" />
+    <Content Include="Script\Login.js" />
+    <Content Include="UserControl\AdminHeader.ascx" />
+    <Content Include="UserControl\CommonFooter.ascx" />
+    <Content Include="UserControl\CommonHeader.ascx" />
+    <Content Include="UserControl\CustomerHeader.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusForU.aspx.cs">
+      <DependentUpon>BusForU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusForU.aspx.designer.cs">
+      <DependentUpon>BusForU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\AdminHeader.ascx.cs">
+      <DependentUpon>AdminHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\AdminHeader.ascx.designer.cs">
+      <DependentUpon>AdminHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CommonFooter.ascx.cs">
+      <DependentUpon>CommonFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\CommonFooter.ascx.designer.cs">
+      <DependentUpon>CommonFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CommonHeader.ascx.cs">
+      <DependentUpon>CommonHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\CommonHeader.ascx.designer.cs">
+      <DependentUpon>CommonHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CustomerHeader.ascx.cs">
+      <DependentUpon>CustomerHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\CustomerHeader.ascx.designer.cs">
+      <DependentUpon>CustomerHeader.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage\Default.Master" />
+    <Content Include="MasterPage\Customer.Master" />
+    <Content Include="MasterPage\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\" />
+    <Folder Include="DAO\" />
+    <Folder Include="User\Admin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
